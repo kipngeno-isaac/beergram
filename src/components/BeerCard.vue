@@ -14,10 +14,10 @@
 
     <v-img
       height="250"
-      src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      src= {{ beer.image_url }}
     ></v-img>
 
-    <v-card-title>Cafe Badilico</v-card-title>
+    <v-card-title>{{ beer.name }}</v-card-title>
 
     <v-card-text>
       <v-row
@@ -78,7 +78,10 @@
 </template>
 <script>
 export default {
-
+props: {'beer':{
+    type:Object,
+    required: true
+}},
 }
 </script>
 
