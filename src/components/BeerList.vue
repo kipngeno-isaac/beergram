@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <beer-card v-for="beer of beers" :key="beer.id" :beer="beer"></beer-card>
+    <beer-card v-for="beer in beers" :key="beer.id" :beer="beer"></beer-card>
   </v-container>
 </template>
 
